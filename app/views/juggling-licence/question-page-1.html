@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="start-page">Back</a>
+
+      <h1 class="heading-large">
+        Can you juggle more than 2 balls?
+      </h1>
+
+      <form class="form" action="question-page-2">
+
+        <fieldset class="form-group">
+
+          <legend class="visuallyhidden">How many balls can you juggle?</legend>
+
+          <label class="form-label" for="eligible">Enter number of balls</label>
+          <input class="form-control" id="eligible" type="text" name="eligible">
+
+        </fieldset>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
